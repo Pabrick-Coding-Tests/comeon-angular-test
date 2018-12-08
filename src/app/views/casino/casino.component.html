@@ -1,0 +1,36 @@
+<div id="viewCasino" class="casino">
+
+  <section class="ui grid centered">
+      <article class="twelve wide column">
+
+          <div class="ui list" id="player-interface"></div>
+
+          <button class="logout ui left floated secondary button inverted" (click)="logout()">
+    <i class="left chevron icon"></i>Log Out
+  </button>
+      </article>
+
+      <article class="four wide column">
+          <div class="search ui small icon input ">
+              <input type="text" placeholder="Search Game" id="search" onkeyup="searchGamesByName()">
+              <i class="search icon"></i>
+          </div>
+      </article>
+  </section>
+
+  <section class="ui grid">
+      <article class="twelve wide column">
+          <h3 class="ui dividing header">Games</h3>
+
+          <ul id="games" class="ui relaxed divided game items links"></ul>
+
+      </article>
+      <article class="four wide column">
+          <h3 class="ui dividing header">Categories</h3>
+
+          <div id="categories" class="ui selection animated list category items"></div>
+
+      </article>
+  </section>
+
+</div>
