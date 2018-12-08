@@ -4,13 +4,21 @@
           <div class="fields">
               <div class="required field">
                   <div class="ui icon input">
-                      <input type="text" name="username" placeholder="Username">
+                      <input
+                        type="text"
+                        name="username"
+                        placeholder="Username"
+                        [(ngModel)]="user">
                       <i class="user icon"></i>
                   </div>
               </div>
               <div class="required field">
                   <div class="ui icon input">
-                      <input type="password" name="password" placeholder="Password">
+                      <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        [(ngModel)]="pass">
                       <i class="lock icon"></i>
                   </div>
               </div>
@@ -22,6 +30,6 @@
               </div>
           </div>
       </form>
-      <div id="error" class="error-msg"></div>
+      <div id="error" class="error-msg">{{ errorMessage }}</div>
   </section>
 </div>
